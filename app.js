@@ -101,7 +101,7 @@ class Player {
     this.room = room
     this.team = 'undecided'
     this.role = 'guesser'
-    this.timeout = 14,400         // # of seconds until kicked for afk (35min)
+    this.timeout = 14400         // # of seconds until kicked for afk (35min)
     this.afktimer = this.timeout       
 
     // Add player to player list and add their socket to the socket list
