@@ -33,7 +33,7 @@ app.use(express.static('public'))
 let io = require('socket.io')(server)
 
 let io = require('socket.io')(server, {
-  pingTimeout: 60000,
+  pingTimeout: 60000
 });
 
 // Catch wildcard socket events
