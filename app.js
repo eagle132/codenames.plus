@@ -32,6 +32,10 @@ app.use(express.static('public'))
 // Websocket
 let io = require('socket.io')(server)
 
+let io = require('socket.io')(server, {
+  pingTimeout: 60000,
+});
+
 // Catch wildcard socket events
 var middleware = require('socketio-wildcard')()
 io.use(middleware)
